@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, FileUtil, Forms, Controls, Graphics, Dialogs, ExtCtrls,
-  StdCtrls;
+  StdCtrls, Unit2, Unit3;
 
 type
 
@@ -14,9 +14,14 @@ type
 
   TForm1 = class(TForm)
     Image1: TImage;
+    Image11: TImage;
     Image2: TImage;
     Image3: TImage;
+    Label1: TLabel;
+    Label2: TLabel;
+    procedure Image11Click(Sender: TObject);
     procedure Image1Click(Sender: TObject);
+    procedure Image2Click(Sender: TObject);
   private
     { private declarations }
   public
@@ -35,6 +40,17 @@ implementation
 procedure TForm1.Image1Click(Sender: TObject);
 begin
 
+end;
+
+procedure TForm1.Image11Click(Sender: TObject);
+begin
+  Application.terminate;
+end;
+
+procedure TForm1.Image2Click(Sender: TObject);
+begin
+  Form3.Show;
+  Form1.Hide;
 end;
 
 end.

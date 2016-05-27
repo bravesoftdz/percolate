@@ -21,6 +21,7 @@ type
     Image14: TImage;
     Image15: TImage;
     Image16: TImage;
+    Image17: TImage;
     Image2: TImage;
     Image3: TImage;
     Image4: TImage;
@@ -49,6 +50,7 @@ type
     procedure Image13Click(Sender: TObject);
     procedure Image14Click(Sender: TObject);
     procedure Image15Click(Sender: TObject);
+    procedure Image17Click(Sender: TObject);
     procedure Image1Click(Sender: TObject);
     procedure Image2Click(Sender: TObject);
     procedure Image3Click(Sender: TObject);
@@ -199,6 +201,13 @@ begin
   verbs[20] := 'ilustrate';
   Panel2.Visible := FALSE;
   Panel1.Visible := TRUE;
+end;
+
+procedure TForm3.Image17Click(Sender: TObject);
+begin
+  //hide/show verb button
+  if Label1.Visible = TRUE then Label1.Visible := FALSE
+  else Label1.Visible := TRUE;
 end;
 
 procedure TForm3.Image2Click(Sender: TObject);

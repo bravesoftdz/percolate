@@ -56,8 +56,11 @@ type
     procedure Image7Click(Sender: TObject);
     procedure Image8Click(Sender: TObject);
     procedure Image9Click(Sender: TObject);
+    procedure Label3Click(Sender: TObject);
+    procedure Label4Click(Sender: TObject);
     procedure Label8Click(Sender: TObject);
     procedure Panel1Click(Sender: TObject);
+    procedure Panel3Click(Sender: TObject);
   private
     { private declarations }
   public
@@ -295,6 +298,26 @@ begin
   Panel2.Visible := TRUE;
 end;
 
+procedure TForm3.Label3Click(Sender: TObject);
+begin
+    Panel1.Visible := FALSE;
+  Randomize;
+  dice := rand();
+  Label1.Caption := verbs[dice];
+  correct := 0;
+  incorrect := 0;
+end;
+
+procedure TForm3.Label4Click(Sender: TObject);
+begin
+    Panel1.Visible := FALSE;
+  Randomize;
+  dice := rand();
+  Label1.Caption := verbs[dice];
+  correct := 0;
+  incorrect := 0;
+end;
+
 procedure TForm3.Label8Click(Sender: TObject);
 begin
 
@@ -309,6 +332,11 @@ begin
   Label1.Caption := verbs[dice];
   correct := 0;
   incorrect := 0;
+end;
+
+procedure TForm3.Panel3Click(Sender: TObject);
+begin
+
 end;
 
 end.

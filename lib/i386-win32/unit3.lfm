@@ -1,14 +1,14 @@
 object Form3: TForm3
-  Left = 418
+  Left = 278
   Height = 675
-  Top = 91
+  Top = 55
   Width = 1230
   Caption = 'Percolate'
   ClientHeight = 675
   ClientWidth = 1230
   Color = clTeal
   OnCreate = FormCreate
-  LCLVersion = '1.4.2.0'
+  LCLVersion = '1.2.4.0'
   object Label1: TLabel
     Left = 0
     Height = 162
@@ -27,9 +27,9 @@ object Form3: TForm3
     ParentFont = False
   end
   object Image1: TImage
-    Left = 1136
+    Left = 720
     Height = 98
-    Top = 592
+    Top = 392
     Width = 106
     OnClick = Image1Click
     Picture.Data = {
@@ -152,9 +152,9 @@ object Form3: TForm3
     Proportional = True
   end
   object Image2: TImage
-    Left = 0
+    Left = 424
     Height = 90
-    Top = 600
+    Top = 400
     Width = 90
     OnClick = Image2Click
     Picture.Data = {
@@ -285,9 +285,9 @@ object Form3: TForm3
   end
   object Label2: TLabel
     Left = 528
-    Height = 25
+    Height = 24
     Top = 24
-    Width = 200
+    Width = 175
     Caption = 'to percolate is to...'
     Font.CharSet = ANSI_CHARSET
     Font.Color = clWhite
@@ -301,7 +301,7 @@ object Form3: TForm3
   object Panel1: TPanel
     Left = 0
     Height = 707
-    Top = -11
+    Top = 0
     Width = 1229
     Caption = ' '
     ClientHeight = 707
@@ -310,9 +310,9 @@ object Form3: TForm3
     OnClick = Panel1Click
     object Label3: TLabel
       Left = 448
-      Height = 117
+      Height = 107
       Top = 256
-      Width = 331
+      Width = 303
       Caption = 'all set?'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
@@ -326,9 +326,9 @@ object Form3: TForm3
     end
     object Label4: TLabel
       Left = 504
-      Height = 23
+      Height = 22
       Top = 384
-      Width = 218
+      Width = 184
       Caption = 'click anywhere to start'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
@@ -342,7 +342,7 @@ object Form3: TForm3
     end
   end
   object Panel2: TPanel
-    Left = 2
+    Left = 0
     Height = 711
     Top = 0
     Width = 1240
@@ -353,9 +353,9 @@ object Form3: TForm3
     TabOrder = 1
     object Label5: TLabel
       Left = 32
-      Height = 35
+      Height = 33
       Top = 32
-      Width = 252
+      Width = 219
       Caption = 'select a category'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clTeal
@@ -1939,9 +1939,9 @@ object Form3: TForm3
     end
   end
   object Image4: TImage
-    Left = 552
+    Left = 535
     Height = 48
-    Top = 616
+    Top = 416
     Width = 168
     OnClick = Image4Click
     Picture.Data = {
@@ -1986,16 +1986,17 @@ object Form3: TForm3
     Proportional = True
   end
   object Panel3: TPanel
-    Left = -4
-    Height = 699
-    Top = -3
-    Width = 1252
-    ClientHeight = 699
-    ClientWidth = 1252
+    Left = 0
+    Height = 704
+    Top = 0
+    Width = 1248
+    ClientHeight = 704
+    ClientWidth = 1248
     Color = clTeal
     ParentColor = False
     TabOrder = 2
     Visible = False
+    OnClick = Panel3Click
     object Label6: TLabel
       Left = 8
       Height = 64
@@ -2270,9 +2271,9 @@ object Form3: TForm3
     end
     object Label7: TLabel
       Left = 556
-      Height = 19
+      Height = 18
       Top = 293
-      Width = 132
+      Width = 114
       Caption = 'correct answers:'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
@@ -2285,9 +2286,9 @@ object Form3: TForm3
     end
     object Label8: TLabel
       Left = 556
-      Height = 19
+      Height = 18
       Top = 344
-      Width = 146
+      Width = 126
       Caption = 'incorrect answers:'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
@@ -2301,9 +2302,9 @@ object Form3: TForm3
     end
     object Label9: TLabel
       Left = 700
-      Height = 33
+      Height = 32
       Top = 288
-      Width = 19
+      Width = 15
       Caption = '0'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite
@@ -2316,9 +2317,9 @@ object Form3: TForm3
     end
     object Label10: TLabel
       Left = 708
-      Height = 33
+      Height = 32
       Top = 336
-      Width = 19
+      Width = 15
       Caption = '0'
       Font.CharSet = ANSI_CHARSET
       Font.Color = clWhite

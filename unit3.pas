@@ -60,6 +60,7 @@ type
     procedure Label4Click(Sender: TObject);
     procedure Label8Click(Sender: TObject);
     procedure Panel1Click(Sender: TObject);
+    procedure Panel3Click(Sender: TObject);
   private
     { private declarations }
   public
@@ -331,6 +332,11 @@ begin
   Label1.Caption := verbs[dice];
   correct := 0;
   incorrect := 0;
+end;
+
+procedure TForm3.Panel3Click(Sender: TObject);
+begin
+
 end;
 
 end.
